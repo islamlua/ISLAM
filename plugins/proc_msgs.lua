@@ -1,6 +1,6 @@
 --[[
 << تم برمجه وكتابه السورس من قبل مطورين >>
-<<         @BLCON  \  @TH3BOSS          >>
+<<        @zozollk1  \  @zozollk1          >>
 ]]
 local function pre_process(msg)
 --====================== Reply Only Group =====================================
@@ -63,9 +63,9 @@ if msg.from.username then usernamex = "@"..msg.from.username else usernamex = ch
 local function check_newmember(arg, data)
 if data.id_ == our_id and redis:get(boss..':WELCOME_BOT') then
 return sendPhoto(arg.chat_id,arg.msg_id,0,1,nil,redis:get(boss..':WELCOME_BOT'),[[💯¦ مـرحبآ آنآ بوت آسـمـي ]]..redis:get(boss..'bot:name')..[[ 🎖
-💰¦ آختصـآصـي حمـآيهہ‏‏ آلمـجمـوعآت
-📛¦ مـن آلسـبآم وآلتوجيهہ‏‏ وآلتگرآر وآلخ...
-⚖️¦ مـعرف آلمـطـور  : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
+💰¦ آختصـآصـي حمـآيهہ‌‏ آلمـجمـوعآت
+📛¦ مـن آلسـبآم وآلتوجيهہ‌‏ وآلتگرآر وآلتقيد 
+💻¦ مـعرف آلمـطـور : ]]..SUDO_USER:gsub([[\_]],'_')..[[ 🌿
 👨🏽‍🔧]],dl_cb,nil)
 end
 if data.username_ then user_name = "@"..data.username_ else user_name = "---" end

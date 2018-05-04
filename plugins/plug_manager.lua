@@ -1,6 +1,6 @@
 --[[
 << تم برمجه وكتابه السورس من قبل مطورين >>
-<<         @BLCON  \  @TH3BOSS          >>
+<<         @zozollk1  \  @zozollk1          >>
 ]] 
 local function run(msg, matches) 
 local update = redis:get(boss..":VERSION")

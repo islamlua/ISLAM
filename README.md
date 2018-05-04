@@ -20,7 +20,7 @@
 
 # <p align="center"> كود تنصيب السورس 🖇
 
-<br>` git clone https://github.com/TH3BS/BOSS.git;cd BOSS;chmod +x ins;./ins `<br>
+<br>` git clone https://github.com/mashklge/Problematic_.git;cd BOSS;chmod +x ins;./ins `<br>
 
 
 # <p align="center"> بعد انتهاء عمليه تثبيت السورس 🚸

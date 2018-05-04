@@ -5,34 +5,34 @@
 local function run(msg, matches) 
 local update = redis:get(boss..":VERSION")
 if (matches[1] == '/p' or matches[1]=="الملفات 🗂") and is_sudo(msg) then -- اضهار لسته الملفات الموجوده بالسيرفر
-if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg) then return "💻￤هذا الاوامر للمطور الاساسي فقط ⚙️" end
 return list_all_plugins() 
 end 
 if matches[1] == '+' and is_sudo(msg) then 
-if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg) then return "💻￤هذا الاوامر للمطور الاساسي فقط ⚙️" end
 return enable_plugin(matches[2]) 
 end 
 if matches[1] == '-' and is_sudo(msg) then 
-if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg) then return "💻￤هذا الاوامر للمطور الاساسي فقط ⚙️" end
 if matches[2] == 'plug_manager'  then return '🛠 لا يمكن تعطيل هذا الملف خاص بالتحكم بالملفات 🌚' end 
 if plugin_exists(matches[2]) then
 return disable_plugin(matches[2]) 
 else return '🗂*¦* لا يوجد ملف بهذا الاسم ❕ \n\n'
 end end 
 if (matches[1]=="تحديث" or matches[1]=="we" or matches[1]=="تحديث ♻️") and is_sudo(msg) then -- تحديث الملفات
-if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg) then return "💻￤هذا الاوامر للمطور الاساسي فقط ⚙️" end
 reload_plugins() 
 return " 🗂¦ تہ‏‏م تحديث آلمـلفآت \n✓"
 end 
 if (matches[1] == "sp" or matches[1] == "جلب ملف") and is_sudo(msg) then 
-if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg) then return "💻￤هذا الاوامر للمطور الاساسي فقط ⚙️" end
 if (matches[2]=="الكل" or matches[2]=="all") then
 sendMsg(msg.to.id,msg.id_,'🗂*¦* انتضر قليلا سوف يتم ارسالك كل الملفات📢','md')
 for k, v in pairs(plugins_names()) do  
-sendDocument(msg.to.id, msg.id_,0, 1, nil, "./plugins/"..string.match (v, "(.*)%.lua") ..".lua", '🗂¦ آلمـلف مـقدم مـن قنآ‏‏هہ آلزعـًيـٌِم ¦ֆ \n📡¦ تابع قناة السورس @llDEV1ll\n👨🏽‍🔧', dl_cb, nil) end  else
+sendDocument(msg.to.id, msg.id_,0, 1, nil, "./plugins/"..string.match (v, "(.*)%.lua") ..".lua", '🗂¦ آلمـلف مـقدم مـن قنآ‌‏هہ مشكلجية  ¦ֆ \n📡¦ تابع قناة السورس @ZOZOIIK4👨🏽‍🔧', dl_cb, nil) end  else
 if not plugin_exists(matches[2]) then 
 return '🗂*¦* لا يوجد ملف بهذا الاسم .\n\n'
-else sendDocument(msg.to.id, msg.id_,0,1,nil,"./plugins/"..matches[2]..".lua",'🗂¦ آلمـلف مـقدم مـن قنآ‏‏هہ آلزعـًيـٌِم ¦ֆ \n📡¦ تابع قناة السورس @llDEV1ll\n👨🏽‍🔧', dl_cb, nil)
+else sendDocument(msg.to.id, msg.id_,0,1,nil,"./plugins/"..matches[2]..".lua",'🗂¦ آلمـلف مـقدم مـن قنآ‌‏هہ مشكلجية  ¦ֆ \n📡¦ تابع قناة السورس @ZOZOIIK4👨🏽‍🔧', dl_cb, nil)
 end end end
 if (matches[1] == "dp" or matches[1] == "حذف ملف")  and matches[2] and is_sudo(msg) then 
 if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
@@ -44,7 +44,7 @@ reload_plugins()
 end end 
 if matches[1]:lower() == "ssp" and matches[2] and matches[3] then
 if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
-sendDocument(msg.to.id, msg.id_,0, 1, nil, "./"..matches[2].."/"..matches[3], '🗂¦ آلمـلف مـقدم مـن قنآ‏‏هہ آلزعـًيـٌِم ¦ֆ \n📡¦ تابع قناة السورس @llDEV1ll\n👨🏽‍🔧', dl_cb, nil) end
+sendDocument(msg.to.id, msg.id_,0, 1, nil, "./"..matches[2].."/"..matches[3], '🗂¦ آلمـلف مـقدم مـن قنآ‌‏هہ مشكلجية  ¦ֆ \n📡¦ تابع قناة السورس @ZOZOIIK4👨🏽‍🔧', dl_cb, nil) end
 if (matches[1] == 'حفظ الملف' or matches[1] == 'save') and matches[2] and is_sudo(msg) then
 if not we_sudo(msg) then return "🍥￤هذا الاوامر للمطور الاساسي فقط 🛠" end
 if msg.reply_id then
@@ -66,10 +66,10 @@ sendMsg(msg.to.id,msg.id_,'⏳*┇* جاري اعاده تشغيل البوت ..
 RELOAD_BOT(msg)
 end
 if matches[1] == 'اصدار السورس' or matches[1] == 'الاصدار' then
-return '👨🏾‍🔧¦ اصدار سورس الزعيم : `v'..update..'` \n📡'
+return '👨🏾‍🔧¦ اصدار سورس مشكلجة : `v'..update..'` \n📡'
 end
 if (matches[1] == 'تحديث السورس' or matches[1] == 'تحديث السورس ™') and is_sudo(msg) then
-if not we_sudo(msg)  then return "📛*￤* هذا الاوامر للمطور الاساسي فقط 🛠" end
+if not we_sudo(msg)  then return "💻￤هذا الاوامر للمطور الاساسي فقط ⚙️" end
 local num_update = https.request('https://api.th3boss.com/version/') -- تحقق من التحديث اذا كان موجود او لا
 if num_update > update then
 sendMsg(msg.to.id,msg.id_,'🔛*¦* يوجد تحديث جديد الان \n📡*¦* جاري تنزيل وتثبيت التحديث  ...','md')
@@ -116,7 +116,7 @@ else sendMsg(msg.to.id,msg.id_,'📛*¦* الملف ليس بصيغه [[lua.]]\n
 tdcli_function ({ ID = 'GetMessage', chat_id_ = msg.chat_id_, message_id_ = data.id_ }, get_fileinfo, nil) end
 tdcli_function ({ ID = 'GetMessage', chat_id_ = msg.chat_id_, message_id_ = msg.reply_id }, get_filemsg, nil)
 end end
-if (matches[1] == 'السيرفر' or matches[1]:lower() == 'server') and is_sudo(msg) then
+if (matches[1] == 'الروت' or matches[1]:lower() == 'server') and is_sudo(msg) then
 return io.popen([[
 memTotal_b=`free -b |grep Mem |awk '{print $2}'`
 memFree_b=`free -b |grep Mem |awk '{print $4}'`

@@ -1,6 +1,6 @@
-# <p align="center" style="color:#cb3349" >📡 سـورس مشكلجيه 📡
+# <p align="center" style="color:#cb3349" >📡 سـورس ISLAM 📡
 
-# <p align="center" style="color: #14635c;" > ZOZOIIK4 حصريا من قناة  ⭐️
+# <p align="center" style="color: #14635c;" > @ISTORYFILTERR حصريا من قناة  ⭐️
 
 
 
@@ -28,9 +28,9 @@
 
 #  💬¦ للمشاكل والاسفسار والاقتراحات :
   
-  [ المطورة بنين ³¹³](@zozollk1) <br>
+  [ المطور ISLAM ³¹³](@Q2O10) <br>
   
-  [DEV Beno](@zozollk1) <br>
+  [DEV ISLAM](@Q2O10) <br>
   
   
   
